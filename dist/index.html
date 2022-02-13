@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Chatroom</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body class="chat">
+
+    <div class="container">
+
+        <!-- Headings and intro -->
+        <header class="chat__header mt-3 text-center">
+            <h1 class="display-1">Realtime Chatroom</h1>
+            <h2>Hi <span></span>, choose a chatroom</h2>
+        </header>
+
+        <!-- Chatrooms -->
+        <div class="chat__rooms text-center my-4">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li class="mx-2"><button class="btn btn-primary" id="general">#general</button></li>
+                <li class="mx-2"><button class="btn btn-primary" id="gaming">#gaming</button></li>
+                <li class="mx-2"><button class="btn btn-primary" id="astronomy">#astronomy</button></li>
+            </ul>
+            <!-- Room change alert -->
+            <div class="alert alert-warning my-3 py-1" role="alert" hidden></div>
+        </div>
+
+        <!-- Chat messages -->
+        <ul class="chat__list"></ul>
+
+        <!-- Chat actions - add messages and update name -->
+        <div class="chat__actions">
+            <!-- New chat message form -->
+            <form class="new-message my-3">
+                <label class="visually-hidden" for="message">Your message</label>
+                <div class="input-group">
+                    <div class="input-group-text">Your message</div>
+                    <input type="text" name="message" class="form-control" placeholder="Type something here...">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+
+            <!-- Update name form -->
+            <form class="update-name my-3">
+                <label class="visually-hidden" for="name">New name</label>
+                <div class="input-group">
+                    <div class="input-group-text">New name</div>
+                    <input type="text" name="name" class="form-control" placeholder="Type your new name here...">
+                    <button type="submit" class="btn btn-warning">Update</button>
+                </div>
+                <div class="alert alert-warning my-3 py-1" role="alert" hidden></div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+    --theme-1: #F9F9F9;
+    --theme-2: #EEEEEE;
+    --theme-3: #80a0b9;
+    --theme-4: #386892;
+    --theme-5: #919191;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--theme-2);
+}
+
+.chat__header h1 {
+    color: var(--theme-4);
+}
+
+.chat__header h2 {
+    color: var(--theme-3);
+}
+
+.chat__rooms ul li button {
+    background: var(--theme-3);
+    color: var(--theme-1);
+    border-color: var(--theme-4);
+}
+
+.chat__rooms ul li button:hover, .chat__rooms ul li button:focus {
+    background: var(--theme-4);
+}
+
+.chat__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.chat__list__message {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--theme-4);
+    background: var(--theme-1);
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.chat__list__message__meta__username {
+    color: var(--theme-4);
+    font-weight: bold;
+}
+
+.chat__list__message__meta {
+    color: var(--theme-5);
+    font-size: 12px;
+}
+
+.chat__list__message__content {
+    color: var(--theme-4);
+}
+
+.chat__actions .input-group-text {
+    background-color: var(--theme-3);
+    color: var(--theme-1);
+}
+
+.chat__actions input::placeholder {
+    color: var(--theme-3);
+}
